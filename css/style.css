@@ -7,6 +7,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 43.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -39,13 +42,13 @@ body {
     color: #19212e; }
 
 .card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
   box-shadow: 0 2rem 4rem rgba(25, 33, 46, 0.4);
   border-radius: .5rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around; }
+  padding: 2rem; }
   .card > *:not(:last-child) {
     margin-bottom: .5rem; }
   .card__profile {
@@ -66,26 +69,72 @@ body {
 .container {
   height: 95vh;
   display: grid;
-  grid-template-columns: 1fr repeat(4, 22rem) 1fr;
+  grid-template-columns: 1fr repeat(4, minmax(20rem, 25rem)) 1fr;
   grid-template-rows: 1fr repeat(2, 27rem) 1fr;
   grid-gap: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      grid-template-columns: 1fr repeat(3, minmax(20rem, 25rem)) 1fr;
+      grid-template-rows: 1fr repeat(3, 27rem) 1fr; } }
+  @media only screen and (max-width: 43.75em) {
+    .container {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr repeat(8, minmax(min-content, 35rem)) 1fr; } }
   .container .daniel {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
     background-color: #7541c8; }
+    @media only screen and (max-width: 56.25em) {
+      .container .daniel {
+        grid-column: 2 / 4; } }
+    @media only screen and (max-width: 43.75em) {
+      .container .daniel {
+        grid-column: 2/3;
+        grid-row: 2 / 4; } }
   .container .jonathan {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
     background-color: #48556a; }
+    @media only screen and (max-width: 56.25em) {
+      .container .jonathan {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4; } }
+    @media only screen and (max-width: 43.75em) {
+      .container .jonathan {
+        grid-column: 2/3;
+        grid-row: 4 / 5; } }
   .container .kira {
     grid-column: 5 / 6;
     grid-row: 2 / 4;
     background-color: white; }
+    @media only screen and (max-width: 56.25em) {
+      .container .kira {
+        grid-column: 4 / 5; } }
+    @media only screen and (max-width: 43.75em) {
+      .container .kira {
+        grid-column: 2/3;
+        grid-row: 8 / 10; } }
   .container .jeanette {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     background-color: white; }
+    @media only screen and (max-width: 56.25em) {
+      .container .jeanette {
+        grid-column: 4 / 5;
+        grid-row: 4 / 5; } }
+    @media only screen and (max-width: 43.75em) {
+      .container .jeanette {
+        grid-column: 2/3;
+        grid-row: 5 / 6; } }
   .container .patrick {
     grid-column: 3 / 5;
     grid-row: 3 / 4;
     background-color: #19212e; }
+    @media only screen and (max-width: 56.25em) {
+      .container .patrick {
+        grid-column: 2 / 4;
+        grid-row: 4 / 5; } }
+    @media only screen and (max-width: 43.75em) {
+      .container .patrick {
+        grid-column: 2 / 3;
+        grid-row: 6 / 8; } }

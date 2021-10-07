@@ -8,7 +8,12 @@
 
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; // 10px
+
+     @include respond(bp-medium){
+        font-size: 50%; //8px
+    }
+    
 
 }
 
@@ -20,3 +25,4 @@ body{
     font-family: $display-font;
     background-color: $Light-gray;
 }
+

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass" : "node-sass sass/main.scss css/style.css -w",
-    "live": "live-server --browser=firefox",
+    "live": "live-server",
     "start": "npm-run-all --parallel sass live"
   },
   "author": "AliReza Davuodi",

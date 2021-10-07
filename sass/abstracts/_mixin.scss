@@ -1,0 +1,24 @@
+@mixin flexbox($align) {
+    display: flex;
+    align-items: ($align);
+}
+
+
+
+@mixin respond($bp) {
+    @if $bp == bp-larger {
+        @media only screen and (max-width:68.75em) { // 1100px
+            @content;
+        }
+    }
+    @if $bp == bp-large {
+        @media only screen and (max-width:56.25em) { // 800px
+            @content;
+        }
+    }
+    @if $bp == bp-medium {
+        @media only screen and (max-width:43.75em) { // 700px
+            @content;
+        }
+    }
+}

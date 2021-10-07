@@ -1,23 +1,58 @@
 .container {
-    height:95vh;
+    height: 95vh;
     display: grid;
-    grid-template-columns: 1fr repeat(4, 22rem) 1fr;
+    grid-template-columns: 1fr repeat(4, minmax(20rem, 25rem)) 1fr;
     grid-template-rows: 1fr repeat(2, 27rem) 1fr;
     grid-gap: 3rem;
 
-   
+    @include respond(bp-large) {
+        grid-template-columns:1fr repeat(3, minmax(20rem, 25rem)) 1fr;
+        grid-template-rows: 1fr repeat(3, 27rem) 1fr;
+    }
+
+    @include respond(bp-medium) {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr repeat(8,minmax( min-content, 35rem)) 1fr;
+
+
+
+    }
 
     .daniel {
         grid-column: 2 / 4;
         grid-row: 2 / 3;
         background-color: $Moderate-violet;
+
+        @include respond(bp-large) {
+            grid-column: 2 / 4;
+
+        }
+
+        @include respond(bp-medium) {
+            grid-column: 2/3;
+            grid-row: 2 / 4;
+
+        }
     }
+
 
 
     .jonathan {
         grid-column: 4 / 5;
         grid-row: 2 / 3;
         background-color: $Very-dark-grayish-blue;
+
+        @include respond(bp-large) {
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+        }
+
+        @include respond(bp-medium) {
+            grid-column: 2/3;
+            grid-row: 4 / 5;
+
+        }
+
     }
 
 
@@ -25,18 +60,55 @@
         grid-column: 5 / 6;
         grid-row: 2 / 4;
         background-color: $White;
+
+        @include respond(bp-large) {
+            grid-column: 4 / 5;
+        }
+
+        @include respond(bp-medium) {
+            grid-column: 2/3;
+            grid-row: 8 / 10;
+        }
+
     }
 
     .jeanette {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
         background-color: $White;
+
+        @include respond(bp-large) {
+            grid-column: 4 / 5;
+            grid-row: 4 / 5;
+        }
+
+        @include respond(bp-medium) {
+            grid-column: 2/3;
+            grid-row: 5 / 6;
+
+
+        }
+
     }
 
     .patrick {
         grid-column: 3 / 5;
         grid-row: 3 / 4;
         background-color: $Very-dark-blackish-blue;
+
+        @include respond(bp-large) {
+            grid-column: 2 / 4;
+            grid-row: 4 / 5;
+        }
+
+        @include respond(bp-medium) {
+            grid-column: 2 / 3;
+            grid-row: 6 / 8;
+
+
+        }
+
+
     }
 
 }
