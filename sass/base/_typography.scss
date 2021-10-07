@@ -1,0 +1,39 @@
+.heading {
+
+    color: $Light-grayish-blue;
+
+    &--2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    &--dark{
+        color:$Very-dark-blackish-blue;
+    }
+}
+
+
+.paragraph {
+    font-size: 1.225rem;
+    color: $Light-grayish-blue;
+    margin-top: 1rem;
+
+    &--small {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    &--light {
+        opacity: .5;
+    }
+
+    &--lighter {
+        opacity: .7;
+    }
+
+    &--dark{
+        color:$Very-dark-blackish-blue;
+    }
+
+
+}

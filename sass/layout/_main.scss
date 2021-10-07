@@ -1,15 +1,11 @@
 .container {
     height:95vh;
     display: grid;
-    grid-template-columns: 1fr repeat(4, 20rem) 1fr;
-    grid-template-rows: 1fr repeat(2, 20rem) 1fr;
+    grid-template-columns: 1fr repeat(4, 22rem) 1fr;
+    grid-template-rows: 1fr repeat(2, 27rem) 1fr;
     grid-gap: 3rem;
 
-
-    .card{
-        box-shadow: 0 2rem 4rem rgba($Very-dark-blackish-blue, .4);
-        border-radius: .5rem;
-    }
+   
 
     .daniel {
         grid-column: 2 / 4;

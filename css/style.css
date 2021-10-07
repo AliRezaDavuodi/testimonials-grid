@@ -16,15 +16,59 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: #cfcfcf; }
 
+.heading {
+  color: #ecf2f8; }
+  .heading--2 {
+    font-size: 2rem;
+    font-weight: 600; }
+  .heading--dark {
+    color: #19212e; }
+
+.paragraph {
+  font-size: 1.225rem;
+  color: #ecf2f8;
+  margin-top: 1rem; }
+  .paragraph--small {
+    font-size: 1.1rem;
+    margin: 0; }
+  .paragraph--light {
+    opacity: .5; }
+  .paragraph--lighter {
+    opacity: .7; }
+  .paragraph--dark {
+    color: #19212e; }
+
+.card {
+  box-shadow: 0 2rem 4rem rgba(25, 33, 46, 0.4);
+  border-radius: .5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around; }
+  .card > *:not(:last-child) {
+    margin-bottom: .5rem; }
+  .card__profile {
+    display: flex;
+    align-items: center; }
+  .card__picture {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    overflow: hidden; }
+  .card__photo {
+    width: 100%;
+    border-radius: 50%; }
+  .card__info {
+    margin-left: 1.5rem;
+    margin-top: -1rem; }
+
 .container {
   height: 95vh;
   display: grid;
-  grid-template-columns: 1fr repeat(4, 20rem) 1fr;
-  grid-template-rows: 1fr repeat(2, 20rem) 1fr;
+  grid-template-columns: 1fr repeat(4, 22rem) 1fr;
+  grid-template-rows: 1fr repeat(2, 27rem) 1fr;
   grid-gap: 3rem; }
-  .container .card {
-    box-shadow: 0 2rem 4rem rgba(25, 33, 46, 0.4);
-    border-radius: .5rem; }
   .container .daniel {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
