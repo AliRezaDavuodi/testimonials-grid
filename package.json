@@ -6,7 +6,12 @@
   "scripts": {
     "sass" : "node-sass sass/main.scss css/style.css -w",
     "live": "live-server",
-    "start": "npm-run-all --parallel sass live"
+    "start": "npm-run-all --parallel sass live",
+
+
+    "compile" : "node-sass sass/main.scss css/style.comp.css",
+    "compress" : "node-sass sass/main.scss css/style.css --output-style compressed",
+    "build" : "npm-run-all compile compress"
   },
   "author": "AliReza Davuodi",
   "license": "ISC",

@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 43.75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  scroll-behavior: smooth;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #cfcfcf; }
+
+.heading {
+  color: #ecf2f8; }
+  .heading--2 {
+    font-size: 2rem;
+    font-weight: 600; }
+  .heading--dark {
+    color: #19212e; }
+
+.paragraph {
+  font-size: 1.225rem;
+  color: #ecf2f8;
+  margin-top: 1rem; }
+  .paragraph--small {
+    font-size: 1.1rem;
+    margin: 0; }
+  .paragraph--light {
+    opacity: .5; }
+  .paragraph--lighter {
+    opacity: .7; }
+  .paragraph--dark {
+    color: #19212e; }
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 2rem 4rem rgba(25, 33, 46, 0.4);
+  border-radius: .5rem;
+  padding: 2rem; }
+  .card > *:not(:last-child) {
+    margin-bottom: .5rem; }
+  .card__profile {
+    display: flex;
+    align-items: center; }
+  .card__picture {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    overflow: hidden; }
+  .card__photo {
+    width: 100%;
+    border-radius: 50%; }
+  .card__info {
+    margin-left: 1.5rem;
+    margin-top: -1rem; }
+
+.container {
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr repeat(4, minmax(20rem, 25rem)) 1fr;
+  grid-template-rows: 1fr repeat(2, 27rem) 1fr;
+  grid-gap: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      grid-template-columns: 1fr repeat(3, minmax(20rem, 25rem)) 1fr;
+      grid-template-rows: 1fr repeat(3, 27rem) 1fr; } }
+  @media only screen and (max-width: 43.75em) {
+    .container {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr repeat(8, minmax(-webkit-min-content, 35rem)) 1fr;
+      grid-template-rows: 1fr repeat(8, minmax(min-content, 35rem)) 1fr; } }
+  .container .daniel {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    background-color: #7541c8;
+    position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .container .daniel {
+        grid-column: 2 / 4; } }
+    @media only screen and (max-width: 43.75em) {
+      .container .daniel {
+        grid-column: 2/3;
+        grid-row: 2 / 4; } }
+    .container .daniel::before {
+      content: "\201C";
+      font-size: 50rem;
+      position: absolute;
+      top: -17rem;
+      right: 0;
+      color: #cfcfcf;
+      opacity: .4; }
+  .container .jonathan {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    background-color: #48556a; }
+    @media only screen and (max-width: 56.25em) {
+      .container .jonathan {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4; } }
+    @media only screen and (max-width: 43.75em) {
+      .container .jonathan {
+        grid-column: 2/3;
+        grid-row: 4 / 5; } }
+  .container .kira {
+    grid-column: 5 / 6;
+    grid-row: 2 / 4;
+    background-color: white; }
+    @media only screen and (max-width: 56.25em) {
+      .container .kira {
+        grid-column: 4 / 5; } }
+    @media only screen and (max-width: 43.75em) {
+      .container .kira {
+        grid-column: 2/3;
+        grid-row: 8 / 10; } }
+  .container .jeanette {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: white; }
+    @media only screen and (max-width: 56.25em) {
+      .container .jeanette {
+        grid-column: 4 / 5;
+        grid-row: 4 / 5; } }
+    @media only screen and (max-width: 43.75em) {
+      .container .jeanette {
+        grid-column: 2/3;
+        grid-row: 5 / 6; } }
+  .container .patrick {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+    background-color: #19212e; }
+    @media only screen and (max-width: 56.25em) {
+      .container .patrick {
+        grid-column: 2 / 4;
+        grid-row: 4 / 5; } }
+    @media only screen and (max-width: 43.75em) {
+      .container .patrick {
+        grid-column: 2 / 3;
+        grid-row: 6 / 8; } }
