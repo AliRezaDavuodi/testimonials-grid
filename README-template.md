@@ -4,8 +4,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL (ScreenShot): [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL (ScreenShot): [shot solution URL here](https://github.com/AliRezaDavuodi/testimonials-grid/blob/master/images/my%20solution.png)
+- Live Site URL: [netlify](frontendmentor-testimonials-grid.netlify.app)
 
 ## My process
 
