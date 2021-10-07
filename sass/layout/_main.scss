@@ -22,6 +22,7 @@
         grid-column: 2 / 4;
         grid-row: 2 / 3;
         background-color: $Moderate-violet;
+        position: relative;
 
         @include respond(bp-large) {
             grid-column: 2 / 4;
@@ -32,6 +33,16 @@
             grid-column: 2/3;
             grid-row: 2 / 4;
 
+        }
+
+        &::before{
+            content:"\201C";
+            font-size: 50rem;
+            position: absolute;
+            top: -17rem;
+            right: 0;
+            color: $Light-gray;
+            opacity: .4;
         }
     }
 
