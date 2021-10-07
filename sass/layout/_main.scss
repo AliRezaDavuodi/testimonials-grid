@@ -1,0 +1,46 @@
+.container {
+    height:95vh;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 20rem) 1fr;
+    grid-template-rows: 1fr repeat(2, 20rem) 1fr;
+    grid-gap: 3rem;
+
+
+    .card{
+        box-shadow: 0 2rem 4rem rgba($Very-dark-blackish-blue, .4);
+        border-radius: .5rem;
+    }
+
+    .daniel {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        background-color: $Moderate-violet;
+    }
+
+
+    .jonathan {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        background-color: $Very-dark-grayish-blue;
+    }
+
+
+    .kira {
+        grid-column: 5 / 6;
+        grid-row: 2 / 4;
+        background-color: $White;
+    }
+
+    .jeanette {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        background-color: $White;
+    }
+
+    .patrick {
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+        background-color: $Very-dark-blackish-blue;
+    }
+
+}
